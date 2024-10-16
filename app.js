@@ -4,12 +4,12 @@ const nextButton = document.getElementById("next-button");
 const playingGif = document.getElementById("playing-Gif");
 
 let songSources = [
-  "/assets/song-1.mp3",
-  "/assets/song-2.mp3",
-  "/assets/song-3.mp3",
-  "/assets/song-4.mp3",
-  "/assets/song-5.mp3",
-  "/assets/song-6.mp3",
+  "assets/song-1.mp3",
+  "assets/song-2.mp3",
+  "assets/song-3.mp3",
+  "assets/song-4.mp3",
+  "assets/song-5.mp3",
+  "assets/song-6.mp3",
 
   // Add more song sources here
 ];
