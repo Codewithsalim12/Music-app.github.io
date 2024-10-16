@@ -19,11 +19,11 @@ let currentSongIndex = 0;
 icon.addEventListener("click", () => {
   if (mysong.paused) {
     mysong.play();
-    icon.src = "/assets/pause.png";
+    icon.src = "assets/pause.png";
     playingGif.style.display = "block";
   } else {
     mysong.pause();
-    icon.src = "/assets/play.png";
+    icon.src = "assets/play.png";
     playingGif.style.display = "none";
   }
 });
@@ -32,14 +32,14 @@ nextButton.addEventListener("click", () => {
   currentSongIndex = (currentSongIndex + 1) % songSources.length;
   mysong.src = songSources[currentSongIndex];
   mysong.play();
-  icon.src = "/assets/pause.png";
+  icon.src = "assets/pause.png";
 });
 
 mysong.addEventListener("ended", () => {
   currentSongIndex = (currentSongIndex + 1) % songSources.length;
   mysong.src = songSources[currentSongIndex];
   mysong.play();
-  icon.src = "/assets/pause.png";
+  icon.src = "assets/pause.png";
 });
 mysong.addEventListener("timeupdate", () => {
   const progressBar = document.getElementById("progress");
